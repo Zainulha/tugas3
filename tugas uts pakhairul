@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Tengah Semester</title>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Custom Logo</title>
+        <style>
+            /* Container untuk logo */
+            .logo-container {
+                position: relative;
+                width: 120px;
+                height: 120px;
+                margin: 50px auto;
+                background-color: #333;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-family: Arial, sans-serif;
+                font-weight: bold;
+            }
+    
+            /* Lingkaran luar */
+            .logo-outer {
+                position: absolute;
+                width: 100px;
+                height: 100px;
+                background-color: #ffffff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            /* Lingkaran dalam */
+            .logo-inner {
+                position: absolute;
+                width: 70px;
+                height: 70px;
+                background-color: #3498db;
+                border-radius: 50%;
+            }
+    
+            /* Teks Logo */
+            .logo-text {
+                position: absolute;
+                color: #ffffff;
+                font-size: 14px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <header>
+        <div class="logo-container">
+            <div class="logo-outer">
+                <div class="logo-inner"></div>
+            </div>
+            <div class="logo-text">MyLogo</div>
+        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Course</a>
+            <a href="#">Teacher</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    
+    </body>
+    </html>
+    
+        </nav>
+    </header>
+    
+    <main>
+        <section class="cover">
+            <img src="cover.jpg" alt="Cover Image">
+            <div class="info">
+                <h1>Ut ultricies imperdiet sodales.</h1>
+                <p>Address</p>
+                <p>.</p>
+                <p>+61 (0) 3 8376 6284</p>
+                <p>noreply@uts.com</p>
+            </div>
+        </section>
+        
+        <section class="icons">
+            <div class="icon">
+                <span class="icon-clock"></span>
+                <p>Sed ut odio vel nunc</p>
+            </div>
+            <div class="icon">
+                <span class="icon-home"></span>
+                <p>Aliquam consectetur</p>
+            </div>
+            <div class="icon">
+                <span class="icon-mail"></span>
+                <p>Malesuada fames</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Say hello!</h2>
+            <form id="contactForm">
+                <input type="text" name="name" placeholder="Your name">
+                <input type="email" name="email" placeholder="Your Email">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea name="message" placeholder="Message"></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <aside class="message-info">
+                <h3>Before sending a message</h3>
+                <p>Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod mi suscipit ligula volutpat...</p>
+            </aside>
+        </section>
+
+        <section class="newsletter">
+            <input type="email" placeholder="Enter email address">
+            <button>SUBSCRIBE</button>
+        </section>
+
+        <section class="footer-links">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">FAQs</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+            </div>
+        </section>
+
+        <footer>
+            <p>Copyrights © 2014 All Rights Reserved by uas Inc.</p>
+            <p>Terms of Use / Privacy Policy</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+}
+
+header .logo {
+    width: 50px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+.cover {
+    display: flex;
+    padding: 20px;
+}
+
+.cover img {
+    width: 50%;
+    margin-right: 20px;
+}
+
+.info {
+    font-size: 18px;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.icon {
+    text-align: center;
+}
+
+.contact-form {
+    padding: 20px;
+    display: flex;
+}
+
+.contact-form h2 {
+    flex: 1;
+}
+
+form {
+    flex: 2;
+}
+
+form input, form textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.message-info {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.newsletter {
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-links {
+    text-align: center;
+    padding: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+    alert("Thank you for your message!");
+});
